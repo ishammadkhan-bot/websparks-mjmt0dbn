@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   ];
 
   const contact = [
-    { icon: 'bi-telephone', text: '+91 98676 75939' },
+    { icon: 'bi-telephone', text: '+91 98676 75739' },
     { icon: 'bi-envelope', text: 'info@athletesportslab.com' },
     { icon: 'bi-geo-alt', text: 'mumbai, maharashtra' },
     { icon: 'bi-clock', text: 'Mon-Fri: 9AM-6PM' }
