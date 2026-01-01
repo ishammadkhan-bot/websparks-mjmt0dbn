@@ -17,7 +17,7 @@ const About: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
           <div>
             <img 
-       src="/images/74113a346586e52c8f08f464598d53f8.jpg"
+       src="https://github.com/ishammadkhan-bot/websparks-mjmt0dbn/blob/main/images/74113a346586e52c8f08f464598d53f8.jpg?raw=true"
               />
               alt="Professional basketball coaching session"
               crossOrigin="anonymous"
