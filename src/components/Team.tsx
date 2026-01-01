@@ -3,7 +3,7 @@ import React from 'react';
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Rajesh Kumar',
+      name: 'Hammad Khan',
       role: 'Head Coach & Program Director',
       experience: '12+ years',
       certifications: ['FIBA Certified', 'Youth Development Specialist'],
@@ -11,23 +11,23 @@ const Team: React.FC = () => {
       specialties: ['Team Building', 'Skill Development', 'Leadership Training']
     },
     {
-      name: 'Priya Sharma',
-      role: 'Sports Management Director',
+      name: 'Suyash mittle',
+      role: 'Senior Basketball Coach',
       experience: '10+ years',
       certifications: ['Sports Management MBA', 'School Partnership Specialist'],
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       specialties: ['Program Management', 'School Relations', 'Strategic Planning']
     },
     {
-      name: 'Arjun Patel',
-      role: 'Senior Basketball Coach',
+      name: 'Divyansh jain',
+      role: 'Sports Management Director',
       experience: '8+ years',
       certifications: ['Basketball India Certified', 'First Aid Certified'],
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
       specialties: ['Technical Skills', 'Game Strategy', 'Player Development']
     },
     {
-      name: 'Sneha Reddy',
+      name: 'yashika shetty',
       role: 'Youth Development Coach',
       experience: '6+ years',
       certifications: ['Child Psychology', 'Sports Coaching Level 2'],
