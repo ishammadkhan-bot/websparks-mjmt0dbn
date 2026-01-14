@@ -46,19 +46,19 @@ const Contact: React.FC = () => {
     {
       icon: 'bi-telephone',
       title: 'Phone',
-      details: ['+91 98765 43210', '+91 87654 32109'],
+      details: ['+91 98676 75739', '+91 87654 32109'],
       action: 'Call Now'
     },
     {
       icon: 'bi-envelope',
       title: 'Email',
-      details: ['info@athletesportslab.com', 'partnerships@athletesportslab.com'],
+      details: ['info@athletesportslab.com', '@athletesportslab.com'],
       action: 'Send Email'
     },
     {
       icon: 'bi-geo-alt',
       title: 'Office',
-      details: ['123 Sports Complex Road', 'Bangalore, Karnataka 560001'],
+      details: ['123 Sports Complex Road', 'Mumbai, Maharastra 400092'],
       action: 'Get Directions'
     },
     {
