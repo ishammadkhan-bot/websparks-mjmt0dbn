@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
   ];
 
   const contact = [
-    { icon: 'bi-telephone', text: '+91 98765 43210' },
+    { icon: 'bi-telephone', text: '+91 9867675739' },
     { icon: 'bi-envelope', text: 'info@athletesportslab.com' },
     { icon: 'bi-geo-alt', text: 'Mumbai, Maharastra' },
     { icon: 'bi-clock', text: 'Mon-Fri: 9AM-6PM' }
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
                 Terms of Service
               </button>
               <div className="text-white/40">
-                Powered by Athelaslab
+                Powered by Athletesportslab
               </div>
             </div>
           </div>
