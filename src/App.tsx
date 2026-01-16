@@ -10,6 +10,7 @@ import Benefits from './components/Benefits';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Auction from './components/Auction';
 
 function App() {
   return (
