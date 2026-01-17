@@ -22,7 +22,7 @@ const Programs: React.FC = () => {
         'Reduced screen time and increased physical activity',
         'Team building and social skills development'
       ],
-      image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/images/74113a346586e52c8f08f464598d53f8.jpg'
     },
     {
       title: 'After-School Basketball Academy',
@@ -42,7 +42,7 @@ const Programs: React.FC = () => {
         'Leadership and teamwork skills',
         'College scholarship preparation'
       ],
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg'
     },
     {
       title: 'PPP Sports Facility Model',
@@ -62,7 +62,7 @@ const Programs: React.FC = () => {
         'Professional facility management',
         'Government partnership opportunities'
       ],
-      image: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      image: '/images/74113a346586e52c8f08f464598d53f8.jpg'
     }
   ];
 

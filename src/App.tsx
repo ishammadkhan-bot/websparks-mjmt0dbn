@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -10,9 +11,9 @@ import Benefits from './components/Benefits';
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Auction from './components/Auction';
+import Partnership from './components/Partnership';
 
-function App() {
+function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -27,6 +28,17 @@ function App() {
       <Contact />
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/partnership" element={<Partnership />} />
+      </Routes>
+    </Router>
   );
 }
 

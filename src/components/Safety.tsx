@@ -98,7 +98,7 @@ const Safety: React.FC = () => {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              src="/images/c5c64e21d1e56abffd9554c6a91bb522.jpg" 
               alt="Safe basketball training environment"
               crossOrigin="anonymous"
               className="rounded-2xl shadow-xl w-full h-[400px] object-cover"

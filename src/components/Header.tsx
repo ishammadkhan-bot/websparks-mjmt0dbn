@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +15,11 @@ const Header: React.FC = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      // If not on home page, navigate to home first
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -26,7 +33,7 @@ const Header: React.FC = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-lg flex items-center justify-center">
               <i className="bi bi-trophy-fill text-white text-lg sm:text-xl"></i>
             </div>
@@ -36,7 +43,7 @@ const Header: React.FC = () => {
               </h1>
               <p className="text-xs text-neutral-600 hidden sm:block">Professional Sports Development</p>
             </div>
-          </div>
+          </Link>
 
           <nav className="hidden lg:flex items-center space-x-8">
             <button onClick={() => scrollToSection('home')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
@@ -66,12 +73,12 @@ const Header: React.FC = () => {
             >
               Start Pilot Program
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <Link 
+              to="/partnership"
               className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium"
             >
               Partner With Us
-            </button>
+            </Link>
           </div>
 
           <button
@@ -111,12 +118,12 @@ const Header: React.FC = () => {
               >
                 Start Pilot Program
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="w-full px-4 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium"
+              <Link 
+                to="/partnership"
+                className="block w-full px-4 py-3 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium text-center"
               >
                 Partner With Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>

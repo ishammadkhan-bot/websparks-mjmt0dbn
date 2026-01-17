@@ -7,7 +7,7 @@ const Team: React.FC = () => {
       role: 'Head Coach & Program Director',
       experience: '12+ years',
       certifications: ['FIBA Certified', 'Youth Development Specialist'],
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: '/images/74113a346586e52c8f08f464598d53f8.jpg',
       specialties: ['Team Building', 'Skill Development', 'Leadership Training']
     },
     {
@@ -15,7 +15,7 @@ const Team: React.FC = () => {
       role: 'Sports Management Director',
       experience: '10+ years',
       certifications: ['Sports Management MBA', 'School Partnership Specialist'],
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Program Management', 'School Relations', 'Strategic Planning']
     },
     {
@@ -23,7 +23,7 @@ const Team: React.FC = () => {
       role: 'Senior Basketball Coach',
       experience: '8+ years',
       certifications: ['Basketball India Certified', 'First Aid Certified'],
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: '/images/74113a346586e52c8f08f464598d53f8.jpg',
       specialties: ['Technical Skills', 'Game Strategy', 'Player Development']
     },
     {
@@ -31,7 +31,7 @@ const Team: React.FC = () => {
       role: 'Youth Development Coach',
       experience: '6+ years',
       certifications: ['Child Psychology', 'Sports Coaching Level 2'],
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Age-Group Training', 'Character Building', 'Safety Protocols']
     }
   ];
