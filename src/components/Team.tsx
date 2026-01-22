@@ -11,10 +11,10 @@ const Team: React.FC = () => {
       specialties: ['Team Building', 'Skill Development', 'Leadership Training']
     },
     {
-      name: 'Avelino Monterio',
+      name: 'Priya sharma',
       role: 'sports physiotherapist',
       experience: '10+ years',
-      certifications: ['Sports Management MBA', 'School Partnership Specialist'],
+      certifications: ['Child Psychology', 'Sports Certified Specialist (SCS)'],
       image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Program Management', 'School Relations', 'Strategic Planning']
     },
@@ -27,10 +27,10 @@ const Team: React.FC = () => {
       specialties: ['Technical Skills', 'Game Strategy', 'Player Development']
     },
     {
-      name: 'Priya Sharma',
+      name: 'Avelino Monterio',
       role: 'Youth Development Coach',
       experience: '6+ years',
-      certifications: ['Child Psychology', ' Sports Certified Specialist (SCS)'],
+      certifications: ['Sports Management MBA', ' School Partnership Specialist)'],
       image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Age-Group Training', 'Character Building', 'Safety Protocols']
     }
