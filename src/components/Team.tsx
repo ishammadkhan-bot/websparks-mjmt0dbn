@@ -3,7 +3,7 @@ import React from 'react';
 const Team: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Rajesh Kumar',
+      name: 'Hammad Khan',
       role: 'Head Coach & Program Director',
       experience: '12+ years',
       certifications: ['FIBA Certified', 'Youth Development Specialist'],
@@ -11,26 +11,26 @@ const Team: React.FC = () => {
       specialties: ['Team Building', 'Skill Development', 'Leadership Training']
     },
     {
-      name: 'Priya Sharma',
-      role: 'Sports Management Director',
+      name: 'Avelino Monterio',
+      role: 'sports physiotherapist',
       experience: '10+ years',
       certifications: ['Sports Management MBA', 'School Partnership Specialist'],
       image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Program Management', 'School Relations', 'Strategic Planning']
     },
     {
-      name: 'Arjun Patel',
+      name: 'Suyash Jain',
       role: 'Senior Basketball Coach',
-      experience: '8+ years',
+      experience: '10+ years',
       certifications: ['Basketball India Certified', 'First Aid Certified'],
       image: '/images/74113a346586e52c8f08f464598d53f8.jpg',
       specialties: ['Technical Skills', 'Game Strategy', 'Player Development']
     },
     {
-      name: 'Sneha Reddy',
+      name: 'Priya Sharma',
       role: 'Youth Development Coach',
       experience: '6+ years',
-      certifications: ['Child Psychology', 'Sports Coaching Level 2'],
+      certifications: ['Child Psychology', ' Sports Certified Specialist (SCS)'],
       image: '/images/c5c64e21d1e56abffd9554c6a91bb522.jpg',
       specialties: ['Age-Group Training', 'Character Building', 'Safety Protocols']
     }
