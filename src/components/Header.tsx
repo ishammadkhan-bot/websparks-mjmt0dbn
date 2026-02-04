@@ -32,15 +32,15 @@ const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/100 border-neutral-200 shadow-md'
-          : 'bg-white/95 border-transparent'
+          ? 'bg-white border-neutral-200 shadow-md'
+          : 'bg-white/95 border-neutral-100'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo + Brand */}
           <Link to="/" className="flex items-center space-x-3 lg:space-x-4">
-            <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center shadow-sm ring-1 ring-neutral-100">
+            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-xl overflow-hidden bg-white flex items-center justify-center shadow-sm ring-1 ring-neutral-100">
               <img
                 src={Logo}
                 alt="Athlete Sports Lab logo"
@@ -57,8 +57,8 @@ const Header: React.FC = () => {
             </div>
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-sm font-medium">
+          {/* Desktop Nav - centered like SFL */}
+          <nav className="hidden lg:flex flex-1 items-center justify-center space-x-6 xl:space-x-8 text-[13px] font-semibold uppercase tracking-[0.16em]">
             <button
               onClick={() => scrollToSection('home')}
               className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
@@ -97,20 +97,14 @@ const Header: React.FC = () => {
             </button>
           </nav>
 
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center space-x-3">
-            <button 
+          {/* Desktop CTA (Book Free Trial style, aligned right) */}
+          <div className="hidden lg:flex items-center ml-6">
+            <button
               onClick={() => scrollToSection('contact')}
-              className="px-4 py-2 text-primary-600 border border-primary-600 rounded-full hover:bg-primary-50 transition-colors font-semibold text-sm"
+              className="px-6 py-2.5 rounded-full bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold shadow-sm transition-colors"
             >
-              Start Pilot Program
+              Book Free Trial
             </button>
-            <Link 
-              to="/partnership"
-              className="px-5 py-2.5 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors font-semibold text-sm shadow-sm"
-            >
-              Partner With Us
-            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
