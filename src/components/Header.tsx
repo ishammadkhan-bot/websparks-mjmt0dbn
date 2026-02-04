@@ -29,13 +29,18 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/90 backdrop-blur-sm'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300 ${
+        isScrolled
+          ? 'bg-white/100 border-neutral-200 shadow-md'
+          : 'bg-white/95 border-transparent'
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          <Link to="/" className="flex items-center space-x-4">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center shadow-md">
+        <div className="flex items-center justify-between h-16 lg:h-20">
+          {/* Logo + Brand */}
+          <Link to="/" className="flex items-center space-x-3 lg:space-x-4">
+            <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center shadow-sm ring-1 ring-neutral-100">
               <img
                 src={Logo}
                 alt="Athlete Sports Lab logo"
@@ -43,49 +48,72 @@ const Header: React.FC = () => {
               />
             </div>
             <div>
-              <h1 className="text-lg sm:text-xl font-heading font-bold text-primary-900">
+              <h1 className="text-base sm:text-lg lg:text-xl font-heading font-bold text-primary-900 tracking-tight">
                 Athlete Sports Lab
               </h1>
-              <p className="text-xs text-neutral-600 hidden sm:block">Professional Sports Development</p>
+              <p className="text-[11px] sm:text-xs text-neutral-600 hidden sm:block uppercase tracking-[0.16em]">
+                Professional Sports Development
+              </p>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center space-x-8">
-            <button onClick={() => scrollToSection('home')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-sm font-medium">
+            <button
+              onClick={() => scrollToSection('home')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               Home
             </button>
-            <button onClick={() => scrollToSection('about')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('about')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               About
             </button>
-            <button onClick={() => scrollToSection('why-asl')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('why-asl')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               Why ASL
             </button>
-            <button onClick={() => scrollToSection('programs')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('programs')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               Programs
             </button>
-            <button onClick={() => scrollToSection('benefits')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('benefits')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               Benefits
             </button>
-            <button onClick={() => scrollToSection('contact')} className="text-neutral-700 hover:text-primary-500 font-medium transition-colors">
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="text-neutral-700 hover:text-primary-600 transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary-500 after:transition-all"
+            >
               Contact
             </button>
           </nav>
 
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center space-x-3">
             <button 
               onClick={() => scrollToSection('contact')}
-              className="px-4 py-2 text-primary-500 border border-primary-500 rounded-lg hover:bg-primary-50 transition-colors font-medium"
+              className="px-4 py-2 text-primary-600 border border-primary-600 rounded-full hover:bg-primary-50 transition-colors font-semibold text-sm"
             >
               Start Pilot Program
             </button>
             <Link 
               to="/partnership"
-              className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors font-medium"
+              className="px-5 py-2.5 bg-primary-600 text-white rounded-full hover:bg-primary-700 transition-colors font-semibold text-sm shadow-sm"
             >
               Partner With Us
             </Link>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 rounded-lg hover:bg-neutral-100 transition-colors"
@@ -95,8 +123,9 @@ const Header: React.FC = () => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-neutral-200 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-neutral-200 shadow-md">
           <div className="px-4 py-6 space-y-4">
             <button onClick={() => scrollToSection('home')} className="block w-full text-left py-2 text-neutral-700 hover:text-primary-500 font-medium">
               Home
