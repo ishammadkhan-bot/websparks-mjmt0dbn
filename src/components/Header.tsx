@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from '../../images/ChatGPT Image Feb 4, 2026, 04_03_18 PM.png';
+import Logo from '../../images/Untitled design (3).png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
