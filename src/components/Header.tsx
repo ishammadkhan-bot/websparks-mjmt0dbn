@@ -41,18 +41,16 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo + Brand */}
             <Link to="/" className="flex items-center space-x-3 lg:space-x-4">
-              <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-xl overflow-hidden bg-white flex items-center justify-center shadow-sm ring-1 ring-neutral-100">
-                <img
-                  src={Logo}
-                  alt="Athlete Sports Lab logo"
-                  className="w-full h-full object-contain"
-                />
-              </div>
+              <img
+                src={Logo}
+                alt="Athlete Sports Lab logo"
+                className="h-14 w-auto lg:h-16 object-contain"
+              />
               <div>
-                <h1 className="text-base sm:text-lg lg:text-xl font-heading font-bold text-primary-900 tracking-tight">
+                <h1 className="text-lg sm:text-xl lg:text-2xl font-heading font-extrabold text-primary-900 tracking-tight">
                   Athlete Sports Lab
                 </h1>
-                <p className="text-[11px] sm:text-xs text-neutral-600 hidden sm:block uppercase tracking-[0.16em]">
+                <p className="text-[10px] sm:text-[11px] text-neutral-600 hidden sm:block uppercase tracking-[0.18em]">
                   Professional Sports Development
                 </p>
               </div>
