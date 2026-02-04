@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from '../../images/ChatGPT Image Feb 4, 2026, 04_03_18 PM.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,8 +35,12 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-lg flex items-center justify-center">
-              <i className="bi bi-trophy-fill text-white text-lg sm:text-xl"></i>
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg overflow-hidden bg-white flex items-center justify-center shadow-sm">
+              <img
+                src={Logo}
+                alt="Athlete Sports Lab logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-heading font-bold text-primary-900">
